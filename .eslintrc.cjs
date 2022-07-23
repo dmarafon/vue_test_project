@@ -14,5 +14,20 @@ module.exports = {
   rules: {
     "no-plusplus": "off",
     "no-restricted-syntax": "off",
+    "import/extensions": [
+      "error",
+      "always",
+      {
+        js: "never",
+        ts: "never",
+      },
+    ],
+  },
+  settings: {
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
+    },
   },
 };
