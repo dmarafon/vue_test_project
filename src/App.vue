@@ -4,9 +4,11 @@
 </script>
 
 <template>
-  <router-link to="/">Home</router-link>
-  <router-link to="/counter">Counter</router-link>
-  <router-view></router-view>
+  <div>
+    <router-link to="/">Home</router-link>
+    <router-link to="/counter">Counter</router-link>
+    <router-view></router-view>
+  </div>
 </template>
 
 <style scoped></style>
