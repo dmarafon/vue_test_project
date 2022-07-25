@@ -3,17 +3,24 @@ module.exports = {
     browser: true,
     es2021: true,
     jest: true,
+    node: true,
   },
-  extends: ["plugin:vue/essential", "airbnb-base", "prettier"],
+  extends: [
+    "eslint:recommended",
+    "plugin:vue/vue3-recommended",
+    "prettier",
+    "plugin:cypress/recommended",
+  ],
   parserOptions: {
     ecmaVersion: "latest",
     parser: "@typescript-eslint/parser",
     sourceType: "module",
   },
-  plugins: ["vue", "@typescript-eslint"],
+  plugins: ["vue", "@typescript-eslint", "import"],
   rules: {
     "no-plusplus": "off",
     "no-restricted-syntax": "off",
+    "vue/require-default-prop": "off",
     "import/extensions": [
       "error",
       "always",

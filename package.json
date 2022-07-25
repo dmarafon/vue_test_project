@@ -11,7 +11,10 @@
     "test": "vitest",
     "test:e2e": "cypress open",
     "test:unit": "vitest",
-    "typecheck": "vue-tsc --noEmit"
+    "typecheck": "vue-tsc --noEmit",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "format": "prettier .  --write"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -43,6 +46,7 @@
     "@typescript-eslint/eslint-plugin": "^5.30.7",
     "@typescript-eslint/parser": "^5.30.7",
     "@vue/test-utils": "^2.0.2",
+    "c8": "^7.12.0",
     "critters": "^0.0.16",
     "cross-env": "^7.0.3",
     "eslint": "^8.20.0",
