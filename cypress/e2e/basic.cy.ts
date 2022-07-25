@@ -1,3 +1,5 @@
+export {};
+
 describe("Basic", () => {
   beforeEach(() => {
     cy.visit("/");

@@ -12,6 +12,6 @@ watch([counterStore.counter], () => console.log("wowww"));
   <div>
     <h1>Home View: {{ counterStore.counter }}</h1>
     <h2>Number of Changes {{ counterStore.numberOfChanges }}</h2>
-    <ButtonTest buttonName="test"></ButtonTest>
+    <ButtonTest button-name="test"></ButtonTest>
   </div>
 </template>

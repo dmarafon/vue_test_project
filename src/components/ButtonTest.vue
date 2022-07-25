@@ -1,5 +1,5 @@
 <script lang="ts">
-export default { name: "ButtonTest", props: ["buttonName"] };
+export default { name: "ButtonTest", props: { buttonName: { type: String } } };
 </script>
 
 <template>
